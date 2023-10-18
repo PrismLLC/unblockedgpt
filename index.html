@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #343541; /* Updated background color for the entire body */
+      margin: 0;
+      padding: 0;
+    }
+
+    .message-container {
+      max-width: 100%;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .message {
+      display: flex;
+      padding: 10px;
+    }
+
+    .avatar {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .user-message {
+      background-color: #343541; /* Updated background color for user messages */
+      color: #ececf1; /* Updated text color for user messages */
+    }
+
+    .contact-message {
+      background-color: #444654; /* Updated background color for contact messages */
+      color: #ced2d8; /* Updated text color for contact messages */
+    }
+
+    .message-text {
+      flex: 1;
+      word-wrap: break-word; /* Allow text to wrap to the next line */
+    }
+  </style>
+</head>
+<body>
+  <div class="message-container">
+    <div class="message user-message">
+      <img class="avatar" src="https://cdn2.iconfinder.com/data/icons/audio-16/96/user_avatar_profile_login_button_account_member-512.png" alt="User Avatar">
+      <div class="message-text">Hi!</div>
+    </div>
+    <div class="message contact-message">
+      <img class="avatar" src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="Contact Avatar">
+      <div class="message-text">Loading...</div>
+    </div>
+  </div>
+</body>
+</html>
